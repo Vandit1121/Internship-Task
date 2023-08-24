@@ -19,14 +19,10 @@ const App = ():ReactElement => {
     setShow(false);
   }
 
-  function setShowToTrue(){
-    setShow(true);
-  }
-
   return (
     <>
       {!show && <>
-        <Table setShow={setShowToTrue} />
+        <Table />
         <CheckBox />
       </>}
       {show && <Form setShow={setShowToFalse} />}
