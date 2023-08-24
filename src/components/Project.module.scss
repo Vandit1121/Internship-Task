@@ -1,0 +1,59 @@
+$phone-width: 500px;
+@function getr($value) {
+  @return calc($value/1920) * 100vw;
+}
+@function getrm($value) {
+  @return calc($value/375) * 100vw;
+}
+
+.details {
+  width: getr(500);
+  margin-left: getr(700);
+  display: flex;
+  flex-direction: column;
+  gap: getr(40);
+  Button{
+    height: getr(60);
+    width: getr(200);
+    margin: auto;
+  }
+}
+
+.table {
+  display: flex;
+  margin-top: 2%;
+  width: 80%;
+  flex-direction: column;
+  gap: getr(20);
+  margin-left: 5%;
+  span {
+    font-size: getr(35);
+    font-weight: 700;
+  }
+}
+
+.checkBoxContainer {
+  display: flex;
+  margin-left: getr(110);
+  margin-top: getr(50);
+  flex-direction: column;
+  margin-bottom: getr(60);
+}
+
+.title {
+  margin-left: getr(-20);
+  font-size: getr(35);
+  font-weight: 700;
+  margin-bottom: getr(25);
+}
+
+.checkBox {
+  display: flex;
+  flex-direction: row;
+  gap: getr(5);
+  button {
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+  }
+}
