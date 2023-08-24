@@ -61,7 +61,7 @@ const Form = ({ setShow }: Props) => {
   return (
     <>
       <div className={styles.details}>
-        <h1>Enter your details here:</h1>
+        <h1>Enter your details:</h1>
         <TextField
           error={NameError}
           id="outlined-error-helper-text"
